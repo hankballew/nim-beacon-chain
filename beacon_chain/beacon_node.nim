@@ -416,4 +416,5 @@ when isMainModule:
         stateSlot = node.beaconState.slot
 
       node.addLocalValidators()
-      node.processBlocks()
+      echo node.beaconState.shard_committees_at_slots
+      # node.processBlocks()
